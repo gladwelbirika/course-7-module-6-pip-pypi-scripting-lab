@@ -4,7 +4,6 @@ import requests
 
 
 def fetch_data():
-    """Fetch a sample post from a public API using requests."""
     try:
         response = requests.get(
             "https://jsonplaceholder.typicode.com/posts/1", timeout=10
@@ -16,7 +15,6 @@ def fetch_data():
 
 
 def generate_log(data):
-    """Write a list of strings to a dated log file and return the filename."""
     if not isinstance(data, list):
         raise ValueError("Input must be a list")
 
